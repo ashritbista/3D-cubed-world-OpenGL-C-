@@ -69,8 +69,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Build\Projects\camera\Headers;C:\Build\Projects\camera\libs&amp;include\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Build\Projects\camera\libs&amp;include\libs\ATB;C:\Build\Projects\camera\libs&amp;include\libs\SOIL;C:\Build\Projects\camera\libs&amp;include\libs\GLEW;C:\Build\Projects\camera\libs&amp;include\libs\GLFW;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Build\Projects\camera\Headers;C:\Build\Projects\camera\dependencies\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Build\Projects\camera\dependencies\libs\ATB;C:\Build\Projects\camera\dependencies\libs\SOIL;C:\Build\Projects\camera\dependencies\libs\GLEW;C:\Build\Projects\camera\dependencies\libs\GLFW;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
