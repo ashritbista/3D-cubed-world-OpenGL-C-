@@ -182,22 +182,6 @@ int main()
 		1, 2, 3  //Second triangle
 	};
 
-	//positions for multiple cubes
-	glm::vec3 cubePositions[] =
-	{
-		glm::vec3(0.0f, 0.0f, 0.0f),
-		glm::vec3(2.0f, 5.0f, -15.0f),
-		glm::vec3(-1.5f, -2.2f, -2.5f),
-		glm::vec3(-3.8f, -2.0f, -12.3f),
-		glm::vec3(2.4f, -0.4f, -3.5f),
-		glm::vec3(-1.7f, 3.0f, -7.5f),
-		glm::vec3(1.3f, -2.0f, -2.5f),
-		glm::vec3(1.5f, 2.0f, -2.5f),
-		glm::vec3(1.5f, 0.2f, -1.5f),
-		glm::vec3(-1.3f, 1.0f, -1.5f)
-	};
-
-
 	//vbo, vao and texture binding for the cube
 	GLuint VBO1, VAO1, EBO;
 	glGenVertexArrays(1, &VAO1);
@@ -240,7 +224,7 @@ int main()
 
 	//load the image and create a texture
 	int width, height;
-	unsigned char* image = SOIL_load_image("C:\\Codes\\OPENGL\\Textures\\container.jpg", &width, &height, 0, SOIL_LOAD_RGB);
+	unsigned char* image = SOIL_load_image("C:\\Build\\Projects\\camera\\Textures\\container.jpg", &width, &height, 0, SOIL_LOAD_RGB);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	glGenerateMipmap(GL_TEXTURE_2D);
 	SOIL_free_image_data(image);
@@ -258,7 +242,7 @@ int main()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 	//load the second image and create a texture
-	image = SOIL_load_image("C:\\Codes\\OPENGL\\Textures\\awesomeface.png", &width, &height, 0, SOIL_LOAD_RGB);
+	image = SOIL_load_image("C:\\Build\\Projects\\camera\\Textures\\awesomeface.png", &width, &height, 0, SOIL_LOAD_RGB);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	glGenerateMipmap(GL_TEXTURE_2D);
 	SOIL_free_image_data(image);
